@@ -59,16 +59,9 @@ public class ClientController {
 	
 	
 	@PostMapping("clients/store")
-	public String saveStudent(@RequestParam("lastname") String lastname ) {
+	public String saveStudent(@ModelAttribute("client") Client client) {
 
-		System.out.println(lastname);
-		//data.getAttribute("a");
-		Client client = new Client();
-		//client.setAddress(data.getAttribute("a"));
-		//client.setFirstname(data.getFirstname());
-		client.setLastname(lastname);
-		//client.setAdvisor(data.getAdvisor());
-		//client.setAgency(data.getAgency());
+		
 		clientRepository.save(client);
 
 		return "redirect:/agencies";

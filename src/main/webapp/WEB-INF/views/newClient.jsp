@@ -45,28 +45,28 @@
 
                           <label>Prénom</label>
                           <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Entrer le prénom du client" path="firstname">
+                            <input type="text" class="form-control" placeholder="Entrer le prénom du client" id="firstname" name="firstname" path="firstname">
                           </div>
 
                           <label>Adresse</label>
                           <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Entrer l'adresse du client" path="adress">
+                            <input type="text" class="form-control" placeholder="Entrer l'adresse du client" id="address" name="address" path="address">
                           </div>
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Choisir l'Agence</label>
-                            <select class="form-control" id="exampleFormControlSelect1" path="agency">
+                            <select class="form-control" id="exampleFormControlSelect1" path="agency" id="agency" name="agency">
                               <c:forEach items="${agencies}" var="agency">
-                                <option value="${agency}"> ${agency.name} </option>
+                                <option value="${agency.number}"> ${agency.name} </option>
                               </c:forEach>    
                             </select>
                           </div>
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Choisir un conseiller pour un client</label>
-                            <select class="form-control" id="exampleFormControlSelect1" path="advisor">
+                            <select class="form-control" id="exampleFormControlSelect1" path="advisor" id="advisor" name="advisor">
                               <c:forEach items="${advisors}" var="advisor">
-                                <option value="${advisor}"> ${advisor.lastname} ${advisor.firstname}</option>
+                                <option value="${advisor.number}"> ${advisor.lastname} ${advisor.firstname}</option>
                               </c:forEach>    
                             </select>
                           </div>
