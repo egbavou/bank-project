@@ -52,7 +52,7 @@ public class EssounandgbavoubanktpApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
-			/*
+			
 			Bank bank = new Bank();
 			bank.setCapital(1000000000.00f);
 			bank.setHeadOfficeAddress("AGLA HLAZOUNTO");
@@ -115,7 +115,7 @@ public class EssounandgbavoubanktpApplication {
 			bankAccount1.setBank(bank);
 			bankAccount1.setClient(client2);
 			bankAccount1.setBalance((float)0);
-			bankAccountRepo.save(bankAccount1); */
+			bankAccountRepo.save(bankAccount1); 
 			
 
 		};
