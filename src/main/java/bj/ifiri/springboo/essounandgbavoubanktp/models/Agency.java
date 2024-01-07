@@ -109,11 +109,20 @@ public class Agency {
 	@OneToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER, mappedBy = "agency")
 	private List<Employee> employes = new ArrayList<Employee>();
 	
-	
 	@OneToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER, mappedBy = "agency")
 	private List<BankAccount> compteBancaireSansInterets = new ArrayList<BankAccount>();
 	
+	
+
+	@OneToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER, mappedBy = "agency")
+	private List<Client> clients = new ArrayList<Client>();
+	
 	@OneToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER, mappedBy = "agency")
 	private List<AccountWithInteret> compteBancaireAvecInterets = new ArrayList<AccountWithInteret>();
+	
+	
+	public List<Client> getClients() {
+		return this.clients;
+	}
 	
 }

@@ -29,6 +29,46 @@ public class BankAccount {
 	@Column
 	private Float balance;
 	
+	public Float getBalance() {
+		return balance;
+	}
+
+	public void setBalance(Float balance) {
+		this.balance = balance;
+	}
+
+	public Date getDateOpening() {
+		return dateOpening;
+	}
+
+	public void setDateOpening(Date dateOpening) {
+		this.dateOpening = dateOpening;
+	}
+
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
+	public Agency getAgency() {
+		return agency;
+	}
+
+	public void setAgency(Agency agency) {
+		this.agency = agency;
+	}
+
+	public Bank getBank() {
+		return bank;
+	}
+
+	public void setBank(Bank bank) {
+		this.bank = bank;
+	}
+
 	@Column
 	private Date dateOpening;
 	

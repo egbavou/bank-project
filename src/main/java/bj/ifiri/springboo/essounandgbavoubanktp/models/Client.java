@@ -31,13 +31,59 @@ public class Client {
 	private Long number;
 	
 	@Column
-	private String lastname;
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
 	
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Employee getAdvisor() {
+		return advisor;
+	}
+
+	public void setAdvisor(Employee advisor) {
+		this.advisor = advisor;
+	}
+	
+	public Agency getAgency() {
+		return agency;
+	}
+
+	public void setAgency(Agency agency) {
+		this.agency = agency;
+	}
+
 	@Column
 	private String firstname;
 	
 	@Column
+	private String lastname;
+	
+	@Column
 	private String address;
+	
+	@ManyToOne()
+	@JoinColumn(name = "agencyNumber")
+	private Agency agency;
 	
 	@ManyToOne()
 	@JoinColumn(name = "employeeNumber")

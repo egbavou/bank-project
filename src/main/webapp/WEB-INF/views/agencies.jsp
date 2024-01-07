@@ -29,7 +29,7 @@
                             <img class="card-img-top" src="/img/evernote.png" alt="Card image cap">
                             <div class="card-body">
                               <h4 class="card-title">${agency.name}</h4>
-                              <a href="javascript:;" class="btn btn-primary">Voir Liste des clients</a>
+                              <a href="/agencies/${agency.number}" class="btn btn-primary">Voir Liste des clients</a>
                             </div>
                         </div>
                         
