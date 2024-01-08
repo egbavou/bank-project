@@ -112,8 +112,6 @@ public class Agency {
 	@OneToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER, mappedBy = "agency")
 	private List<BankAccount> compteBancaireSansInterets = new ArrayList<BankAccount>();
 	
-	
-
 	@OneToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER, mappedBy = "agency")
 	private List<Client> clients = new ArrayList<Client>();
 	

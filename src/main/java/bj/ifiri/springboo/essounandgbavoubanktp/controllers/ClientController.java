@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import bj.ifiri.springboo.essounandgbavoubanktp.models.Agency;
 import bj.ifiri.springboo.essounandgbavoubanktp.models.Client;
@@ -64,7 +63,7 @@ public class ClientController {
 		
 		clientRepository.save(client);
 
-		return "redirect:/agencies";
+		return "redirect:/agencies/"+client.getAgency().getNumber();
 	}
 }
 
