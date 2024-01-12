@@ -30,6 +30,10 @@ public class Employee {
 	@GeneratedValue
 	private Long number;
 	
+	public Long getNumber() {
+		return number;
+	} 
+	
 	public String getLastname() {
 		return lastname;
 	}

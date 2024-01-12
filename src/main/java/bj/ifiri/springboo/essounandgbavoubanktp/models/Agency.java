@@ -45,6 +45,10 @@ public class Agency {
 	public String getName() {
 		return name;
 	}
+	
+	public Long getNumber() {
+		return number;
+	}
 
 	public void setName(String name) {
 		this.name = name;

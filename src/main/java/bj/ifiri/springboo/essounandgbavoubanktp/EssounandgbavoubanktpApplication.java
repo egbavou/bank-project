@@ -117,6 +117,7 @@ public class EssounandgbavoubanktpApplication {
 			bankAccount1.setBalance((float)0);
 			bankAccountRepo.save(bankAccount1); 
 			
+			
 
 		};
 	}
